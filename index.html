@@ -1,1 +1,145 @@
-My Page
+<!doctype html>
+<html>
+<head>
+    <title>Rachana's JS Test</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="http://www.i2symbol.com/images/abc-123/r/script_capital_r_u211B_icon_256x256.png" sizes="60x60">
+    <style type="text/css">
+     body{background-color:#FE2E64;        font-family:"Trebuchet MS", Helvetica, sans-serif;}
+     .header{
+       background-color:#0B0B3B; 
+       text-align: center;
+       width:600px;
+       color: #FFD700;
+       float:center;
+       position:relative;
+       left:200px;
+       font-family:"Trebuchet MS", Helvetica, sans-serif;
+     }
+     .border{
+       width: 300px;
+       border-width:10px; 
+       border-color:gold; 
+       border-style:solid;
+       border-radius:100px;
+       padding-top:0;
+       margin-top:0;
+       font-family:"Trebuchet MS", Helvetica, sans-serif;
+     }
+     .border2{
+       width: 300px;
+       border-width:10px; 
+       border-color:#FFD700; 
+       border-style:solid;
+       border-radius:100px;
+       padding-top:10px;
+       margin-top:0;
+       font-family:"Trebuchet MS", Helvetica, sans-serif;
+     } 
+     .blackbox{
+        float:right;
+        width:400px; 
+        border-width:8px; 
+        border-color:#240B3B;
+        border-style:solid; 
+        font-family:"Trebuchet MS", Helvetica, sans-serif;
+     }
+     h2 {
+      padding-left:0; 
+      margin: 0;
+      font-family:"Trebuchet MS", Helvetica, sans-serif;
+      font-style: italic; 
+      font-size:20px;
+     }
+     a:visited{
+      color:#240B3B
+    }
+    a:hover{
+      font-size:25px;
+    }
+    </style>        
+</head>
+
+<body> 
+
+  <img src="http://vignette1.wikia.nocookie.net/legendarywars/images/c/cf/Gold-star-graphic.png/revision/latest?cb=20110731175920" height= 400 width= 400 align="right">
+  <div class="header">
+    <h1>Rachana Lingutla</h1>
+    <h2>My professional webpage</h2> 
+  </div> 
+ <p> I am a student at the University of Massachusetts who is currently learning about web development.</p> 
+
+
+<div class="border">
+<h2 style="padding-left:45px; padding-top:10px;"><u>Courses I have taken</u> </h2> 
+<ul> 
+  <li><strong>Intro to Computation</strong>:Most difficult class on list</li>
+  <li>Programming Methodology</li>
+  <li>Multivariable Calculus</li> 
+  <li>Data Structures</li> 
+</ul> 
+</div>
+
+<h2><u>Places I have visited</u></h2> 
+<ol> 
+  <li><a href="http://en.wikipedia.org/wiki/India"target=_blank>India</a> </li>
+  <li><a href="http://en.wikipedia.org/wiki/Mexico"target=_blank>Mexico</a> </li>
+  <li><a href="http://en.wikipedia.org/wiki/Canada"target=_blank>Canada</a> </li>
+  <li><a href="http://en.wikipedia.org/wiki/California"target=_blank>California</a> </li>
+</ol>
+
+<div class="blackbox">
+<p> Type some text and watch it get added to the box!</p>
+<input id="input" type="text" style="margin-bottom:20px;" />
+<button id="inputButton" style="float:center">Add Text!!</button>
+<div id="emptyDiv"></div>
+</div>
+
+<table> 
+ <tr><th>Cool</th><th>Not Cool</th></tr> 
+ <tr><td>Pandas</td><td>Calculator Watches</td></tr>
+ <tr><td>UMass</td><td>Fedoras</td></tr>
+</table>
+
+<br /><br />
+<div class="border2">
+<p style="margin-left:50px;">Thanks for visiting this page!</p> 
+<p style="margin-left:35px;">Please take a moment to rate this page</p>
+<form style="margin-left:100px;margin-top:-30px;padding-bottom:20px;"> 
+  <select>
+   <option>1</option>
+   <option>2</option>
+   <option>3</option>
+   <option>4</option>
+   <option>5</option>
+  </select>
+</form>
+<button style="margin-left:70px; margin-bottom:10px;" id="myButton">Click Me =)</button>
+<button id="textAppender">Finish this sentence</button>
+<p id="text"style="margin-left:60px;">Javascript is...</p>
+
+<script type="text/javascript">
+   var newText=document.getElementById("input").value;
+
+   document.getElementById("inputButton").onclick=function(){
+      newText=document.getElementById("input").value;
+      document.getElementById("emptyDiv").innerHTML=document.getElementById("emptyDiv").innerHTML + " " +newText;
+   }
+   document.getElementById("myButton").onclick=function(){
+    window.location="http://www.xkcd.com/";
+   }
+   document.getElementById("textAppender").onclick=function(){
+       document.getElementById("text").innerHTML= document.getElementById("text").innerHTML + "kinda cool I guess ";
+   }
+   docume
+
+
+</script>
+</div>
+
+
+</body>
+</html>
