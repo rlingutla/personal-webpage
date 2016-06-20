@@ -1,0 +1,97 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+body{
+  background-color:#26081C;
+  font-family: "Lato", sans-serif;
+  color:#BCAA99;
+  height:100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+a{
+  display: inline-table;
+  color:#262322;
+  float:right;
+}
+ul{
+  margin-left:475px;
+  padding-left: 40px;
+  font-size: 20px;
+}
+li{
+  color:white;
+  margin-left:10px;
+  padding: 10px;
+}
+h3{
+  font-size:30px;
+  margin-top:100px;
+  margin-left:625px;
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0);
+  box-shadow: inset 0 0 100px rgba(0,0,0);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 40px;
+}
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 0px;
+  color: #26081C;
+  background-color: #BCAA99;
+  border-width: 0px;
+  margin: 10px;
+}
+
+.btn-circle.btn-xl {
+
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+  color: #26081C;
+  background-color: #BCAA99;
+}
+/*
+* Affix and center
+*/
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+
+       /* Start the vertical centering */
+       .site-wrapper-inner {
+         vertical-align: middle;
+       }
+
+       .cover-container {
+         width: 100%; /* Must be percentage or pixels for horizontal alignment */
+       }
+     }
+
+     @media (min-width: 992px) {
+       .cover-container {
+         width: 700px;
+       }
+     }
